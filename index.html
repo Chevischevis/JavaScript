@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>1er programa en java script</title>
+    <script language="JavaScript">
+    
+    var name = prompt("Esriba su nombre", "anonymus")
+    
+        function makebar()
+        {   
+            var output = "<HR ALIGN='left' WIDTH=1000>"
+            document.write(output)
+        }
+        
+        function makeHeader(text, color, size)
+        {
+            var output ="<FONT COLOR='"+ color +"' SIZE="+size+">"+text+"</FONT>" 
+            document.write(output)
+            makebar()
+        }
+    makeHeader(name,"red","+4")
+    var number = prompt("Escriba un numero", 0)
+    var number = parseInt(number)//hace la conversión entre cadena de texto y numeros
+    
+    alert("Click aceptar to continue...")
+    
+    var reply=confirm("De click en ace#"ptar, para seguir con su programa, y de click en cancelar si no quiere")
+
+    var age=parseInt(prompt("Escriba su edad", 12))
+    if(age<21)
+        alert("Sorry, you are too young to enter")
+    var number1 = 1;
+    var number2=1;
+    
+    for(var counter=1; counter<=10;counter++)
+    {       
+        document.write(number1+" ")
+        number2 =number2+number1
+        number1= number2-number1
+    }
+    document.write("<BR>")
+    
+    for(var i=1; i<=10; i++)
+    {   
+        for(var j=1; j<=25; j++)
+        {
+            document.write("*")
+        }
+        document.write("<BR>")
+    }
+
+    var n=parseInt(prompt("Enter a number", 10))
+    var nFactorial=1
+    var factor=1
+    while(factor<n)
+    {   
+        factor++
+        nFactorial*=factor
+    }
+    
+    alert(n+"! is"+nFactorial)
+    
+    var result=""
+    for(curProperty in document)
+    {
+        result+="document."+curProperty+"<BR>"
+    }
+    
+    document.write(result)
+    </script>
+    
+    
+</head>
+
+<body>
+   
+</body>
+</html> 
+
