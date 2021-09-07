@@ -14,12 +14,6 @@
             makebar()
         }
     makeHeader(name,"red","+4")
-    var number = prompt("Escriba un numero", 0)
-    var number = parseInt(number)//hace la conversión entre cadena de texto y numeros
-    
-    alert("Click aceptar to continue...")
-    
-    var reply=confirm("De click en ace#"ptar, para seguir con su programa, y de click en cancelar si no quiere")
 
     var age=parseInt(prompt("Escriba su edad", 12))
     if(age<21)
